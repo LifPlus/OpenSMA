@@ -1,0 +1,5 @@
+Compound,SMILES,MW,LogP,TPSA,RotBonds,HBD,HBA,Ro5_Violations,CNS_MPO_Score,PAINS_Flag,hERG_Alert,Reactive_Groups,BBB_Suitable,Safety_Rating,Vina_Affinity_kcal/mol,Fitness_Score,QED,3D_Energy_kcal/mol,BBB
+DeNovo_Cand_1,CC1=CN=C2N1N=CC(=C2C3=CC4=C(C=C3)C(=O)N=C(N4)N5CCC6(CC5)CC6)C,400.49,3.63,79.18,2.0,1.0,5.0,0.0,4.0,False,ALERT,,True,REVIEW,-7.7,,,,
+DeNovo_Cand_2,Cc1cnn2c(C)cnc2c1-c1ccc2c(=O)nc(N3CCC4(CC3)CC4)[nH]c2c1,400.49,3.63,79.18,2.0,1.0,5.0,0.0,4.0,False,ALERT,,True,REVIEW,-7.69,,,,
+,CC1=CN=C2N1N=CC(=C2C3=CC4=C(C=C3)C(=O)N=C(N4)N5CCC6(CC5)CC6)C,-,-,-,,,,,,,,,,,-7.7,REF,-,-,-
+,OCC1OC(N2C=CC(=O)NC2=O)CC1O,-,-,-,,,,,,,,,,,-2.85,REF,-,-,-

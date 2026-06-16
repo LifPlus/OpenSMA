@@ -1,0 +1,7 @@
+Rank,Candidate,Type,Status,Efficacy_Score_(0-10),Safety_Score_(0-10),Delivery_Score_(0-10),Composite_Score,Recommendation,SMN_Boost_%,Mean_AE_Risk_%,CpG_Free,Route
+1,Pipeline ASO v1 (Optimized),ASO,In Silico / Proposed,10.0,8.87,7.0,8.65,✅ GO — High priority for wet-lab / IND enabling,73.4,9.0,True,Intrathecal
+2,Pipeline SM Analog (CC1=CN=C2N1N=CC...),Small Molecule,In Silico / Proposed,7.53,8.96,7.0,7.94,✅ GO — High priority for wet-lab / IND enabling,30.8,8.0,True,Oral
+3,Fluoro-Risdiplam Analog (OpenSMA Candidate),Small Molecule,In Silico / Proposed,6.71,8.99,7.0,7.71,✅ GO — High priority for wet-lab / IND enabling,29.5,7.3,True,Oral
+4,Novel ASO v1 [+4 to +21] (OpenSMA Candidate),ASO,In Silico / Proposed,7.4,8.47,7.0,7.71,✅ GO — High priority for wet-lab / IND enabling,30.5,9.1,True,Intrathecal
+5,Risdiplam (Evrysdi) [Baseline],Small Molecule,FDA Approved,5.71,8.87,7.0,7.36,"🔶 REVIEW — Promising, needs further validation",28.0,8.2,True,Oral
+6,Nusinersen (Spinraza) [Baseline],ASO,FDA Approved,3.81,7.72,7.0,6.33,"🔶 REVIEW — Promising, needs further validation",25.0,11.7,False,Intrathecal

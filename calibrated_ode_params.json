@@ -1,0 +1,26 @@
+{
+  "Nusinersen": {
+    "k_in": 0.3151,
+    "smn_target": 40.36,
+    "mn_decay": 0.001,
+    "protection_strength": 0.99,
+    "baseline_smn": 15.0,
+    "SMN_RMSE_vs_literature": 0.33
+  },
+  "Risdiplam": {
+    "k_in": 0.3835,
+    "smn_target": 43.29,
+    "mn_decay": 0.001,
+    "protection_strength": 0.99,
+    "baseline_smn": 15.0,
+    "SMN_RMSE_vs_literature": 0.28
+  },
+  "Repurposed_Combo": {
+    "k_in": 0.3858,
+    "smn_target": 31.2,
+    "mn_decay": 0.001,
+    "protection_strength": 0.99,
+    "baseline_smn": 15.0,
+    "SMN_RMSE_vs_literature": 0.2
+  }
+}

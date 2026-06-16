@@ -1,0 +1,9 @@
+{
+    "patient_id": "SMA-CASE-001 (Typical)",
+    "age_months": 6,
+    "weight_kg": 7.0,
+    "smn2_copies": 2,
+    "sma_type": 1,
+    "baseline_motor_function_chop_intend": 8,
+    "previous_treatments": []
+}

@@ -1,0 +1,143 @@
+{
+  "pipeline_status": "PASS",
+  "patient": {
+    "patient_id": "SMA-CASE-001 (Typical)",
+    "age_months": 6,
+    "weight_kg": 7.0,
+    "smn2_copies": 2,
+    "sma_type": 1,
+    "baseline_motor_function_chop_intend": 8,
+    "previous_treatments": []
+  },
+  "phase_results": {
+    "phase_01": {
+      "status": "PASS",
+      "name": "De Novo Small Molecule Generation (Genetic Algorithm)",
+      "script": "molecule_optimizer.py"
+    },
+    "phase_02": {
+      "status": "PASS",
+      "name": "Smart ASO Design (Generative + Splicing Estimator)",
+      "script": "aso_designer.py"
+    },
+    "phase_03": {
+      "status": "PASS",
+      "name": "CRISPR/Base Editing gRNA Design",
+      "script": "crispr_designer.py"
+    },
+    "phase_04": {
+      "status": "PASS",
+      "name": "ADMET Pharmacokinetic Screening",
+      "script": "admet_screener.py"
+    },
+    "phase_05": {
+      "status": "PASS",
+      "name": "ASO Toxicity Pre-Screen",
+      "script": "aso_toxicity.py"
+    },
+    "phase_06": {
+      "status": "PASS",
+      "name": "AutoDock Vina 3D Molecular Docking",
+      "script": "docking_engine.py"
+    },
+    "phase_07": {
+      "status": "PASS",
+      "name": "Tox21 ML Toxicity Prediction (GBM / 1999 molecules)",
+      "script": "toxicity_model.py"
+    },
+    "phase_08": {
+      "status": "PASS",
+      "name": "ODE Calibration (Finkel 2017, Baranello 2021) + Genome Off-Target",
+      "script": "ode_calibration_and_screening.py"
+    },
+    "phase_09": {
+      "status": "PASS",
+      "name": "Composite Final Scoring & Ranking",
+      "script": "final_scorer.py"
+    },
+    "phase_10": {
+      "status": "PASS",
+      "name": "Personalized Patient Clinical Simulation",
+      "script": "patient_sim.py"
+    },
+    "phase_11": {
+      "status": "PASS",
+      "name": "Full Cure Protocol Simulation (5-Year ODE)",
+      "script": "full_cure_sim.py"
+    },
+    "phase_12": {
+      "status": "PASS",
+      "name": "Metropolis Monte Carlo 3D Binding Stability Simulator",
+      "script": "pocket_dynamics.py"
+    }
+  },
+  "key_outputs": {
+    "best_docking_affinity_kcal": -7.7,
+    "best_aso_score": 292.6,
+    "best_exon7_inclusion": 88.4,
+    "calibrated_ode": {
+      "Nusinersen": {
+        "k_in": 0.3151,
+        "smn_target": 40.36,
+        "mn_decay": 0.001,
+        "protection_strength": 0.99,
+        "baseline_smn": 15.0,
+        "SMN_RMSE_vs_literature": 0.33
+      },
+      "Risdiplam": {
+        "k_in": 0.3835,
+        "smn_target": 43.29,
+        "mn_decay": 0.001,
+        "protection_strength": 0.99,
+        "baseline_smn": 15.0,
+        "SMN_RMSE_vs_literature": 0.28
+      },
+      "Repurposed_Combo": {
+        "k_in": 0.3858,
+        "smn_target": 31.2,
+        "mn_decay": 0.001,
+        "protection_strength": 0.99,
+        "baseline_smn": 15.0,
+        "SMN_RMSE_vs_literature": 0.2
+      }
+    },
+    "safe_sequences": 6,
+    "flagged_sequences": 2,
+    "full_cure_walk_pct_5yr": 50.2,
+    "full_cure_survival_5yr": 98.7,
+    "tox21_predictions": [
+      {
+        "Molecule": "OpenSMA_Cand_1",
+        "SMILES": "CC1=CN=C2N1N=CC(=C2C3=CC4=C(C=C3)C(=O)N=...",
+        "Tox_Prob_SR-MMP": 0.874,
+        "Verdict": "\u26a0\ufe0f TOXIC"
+      },
+      {
+        "Molecule": "OpenSMA_Cand_2",
+        "SMILES": "CC1=CN=C2N1N=CC(=C2C3=CC4=C(C=C3)C(=O)N=...",
+        "Tox_Prob_SR-MMP": 0.858,
+        "Verdict": "\u26a0\ufe0f TOXIC"
+      },
+      {
+        "Molecule": "Risdiplam (FDA Approved)",
+        "SMILES": "CC1=CN=C2N1N=CC(=C2C3=CC4=C(C=C3)C(=O)N=...",
+        "Tox_Prob_SR-MMP": 0.874,
+        "Verdict": "\u26a0\ufe0f TOXIC"
+      },
+      {
+        "Molecule": "Acetaminophen (hepatotoxic ref)",
+        "SMILES": "CC(=O)Nc1ccc(O)cc1...",
+        "Tox_Prob_SR-MMP": 0.407,
+        "Verdict": "\u2705 SAFE"
+      },
+      {
+        "Molecule": "Aspirin (safe ref)",
+        "SMILES": "CC(=O)Oc1ccccc1C(=O)O...",
+        "Tox_Prob_SR-MMP": 0.059,
+        "Verdict": "\u2705 SAFE"
+      }
+    ],
+    "best_mmc_stability_rmsd": 4.66,
+    "best_mmc_stability_class": "UNSTABLE (Pocket escape)"
+  }
+}

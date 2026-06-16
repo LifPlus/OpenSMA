@@ -1,0 +1,6 @@
+Molecule,SMILES,Tox_Prob_SR-MMP,Verdict
+OpenSMA_Cand_1,CC1=CN=C2N1N=CC(=C2C3=CC4=C(C=C3)C(=O)N=...,0.874,⚠️ TOXIC
+OpenSMA_Cand_2,CC1=CN=C2N1N=CC(=C2C3=CC4=C(C=C3)C(=O)N=...,0.858,⚠️ TOXIC
+Risdiplam (FDA Approved),CC1=CN=C2N1N=CC(=C2C3=CC4=C(C=C3)C(=O)N=...,0.874,⚠️ TOXIC
+Acetaminophen (hepatotoxic ref),CC(=O)Nc1ccc(O)cc1...,0.407,✅ SAFE
+Aspirin (safe ref),CC(=O)Oc1ccccc1C(=O)O...,0.059,✅ SAFE

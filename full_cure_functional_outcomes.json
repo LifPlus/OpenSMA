@@ -1,0 +1,177 @@
+{
+  "Untreated": {
+    "month_12": {
+      "smn_pct": 18.1,
+      "mn_pct": 39.5,
+      "Spontaneous_Breathing_%": 9.8,
+      "Head_Control_%": 13.2,
+      "Sit_Unaided_%": 2.6,
+      "Stand_With_Support_%": 0.6,
+      "Walk_Independently_%": 0.1,
+      "Normal_Swallow_%": 7.9,
+      "Survival_at_24m_%": 21.0
+    },
+    "month_24": {
+      "smn_pct": 18.1,
+      "mn_pct": 24.8,
+      "Spontaneous_Breathing_%": 9.8,
+      "Head_Control_%": 13.2,
+      "Sit_Unaided_%": 2.6,
+      "Stand_With_Support_%": 0.6,
+      "Walk_Independently_%": 0.1,
+      "Normal_Swallow_%": 7.9,
+      "Survival_at_24m_%": 21.0
+    },
+    "month_60": {
+      "smn_pct": 18.1,
+      "mn_pct": 6.9,
+      "Spontaneous_Breathing_%": 9.8,
+      "Head_Control_%": 13.2,
+      "Sit_Unaided_%": 2.6,
+      "Stand_With_Support_%": 0.6,
+      "Walk_Independently_%": 0.1,
+      "Normal_Swallow_%": 7.9,
+      "Survival_at_24m_%": 21.0
+    }
+  },
+  "Nusinersen_Only": {
+    "month_12": {
+      "smn_pct": 27.2,
+      "mn_pct": 54.6,
+      "Spontaneous_Breathing_%": 24.3,
+      "Head_Control_%": 30.2,
+      "Sit_Unaided_%": 8.8,
+      "Stand_With_Support_%": 2.5,
+      "Walk_Independently_%": 0.6,
+      "Normal_Swallow_%": 20.9,
+      "Survival_at_24m_%": 41.5
+    },
+    "month_24": {
+      "smn_pct": 23.8,
+      "mn_pct": 46.7,
+      "Spontaneous_Breathing_%": 18.1,
+      "Head_Control_%": 23.1,
+      "Sit_Unaided_%": 5.7,
+      "Stand_With_Support_%": 1.5,
+      "Walk_Independently_%": 0.3,
+      "Normal_Swallow_%": 15.2,
+      "Survival_at_24m_%": 33.5
+    },
+    "month_60": {
+      "smn_pct": 19.1,
+      "mn_pct": 28.7,
+      "Spontaneous_Breathing_%": 10.9,
+      "Head_Control_%": 14.6,
+      "Sit_Unaided_%": 3.0,
+      "Stand_With_Support_%": 0.7,
+      "Walk_Independently_%": 0.2,
+      "Normal_Swallow_%": 8.9,
+      "Survival_at_24m_%": 22.9
+    }
+  },
+  "OpenSMA_Phase1": {
+    "month_12": {
+      "smn_pct": 38.2,
+      "mn_pct": 57.5,
+      "Spontaneous_Breathing_%": 47.6,
+      "Head_Control_%": 54.7,
+      "Sit_Unaided_%": 24.3,
+      "Stand_With_Support_%": 10.4,
+      "Walk_Independently_%": 3.2,
+      "Normal_Swallow_%": 43.1,
+      "Survival_at_24m_%": 66.6
+    },
+    "month_24": {
+      "smn_pct": 30.5,
+      "mn_pct": 51.5,
+      "Spontaneous_Breathing_%": 31.0,
+      "Head_Control_%": 37.4,
+      "Sit_Unaided_%": 12.6,
+      "Stand_With_Support_%": 4.0,
+      "Walk_Independently_%": 0.9,
+      "Normal_Swallow_%": 27.2,
+      "Survival_at_24m_%": 49.4
+    },
+    "month_60": {
+      "smn_pct": 19.6,
+      "mn_pct": 35.5,
+      "Spontaneous_Breathing_%": 11.6,
+      "Head_Control_%": 15.5,
+      "Sit_Unaided_%": 3.2,
+      "Stand_With_Support_%": 0.8,
+      "Walk_Independently_%": 0.2,
+      "Normal_Swallow_%": 9.5,
+      "Survival_at_24m_%": 24.1
+    }
+  },
+  "Full_Cure_Protocol": {
+    "month_12": {
+      "smn_pct": 76.3,
+      "mn_pct": 61.3,
+      "Spontaneous_Breathing_%": 96.9,
+      "Head_Control_%": 97.7,
+      "Sit_Unaided_%": 89.6,
+      "Stand_With_Support_%": 73.5,
+      "Walk_Independently_%": 50.0,
+      "Normal_Swallow_%": 96.1,
+      "Survival_at_24m_%": 98.7
+    },
+    "month_24": {
+      "smn_pct": 76.4,
+      "mn_pct": 59.6,
+      "Spontaneous_Breathing_%": 96.9,
+      "Head_Control_%": 97.8,
+      "Sit_Unaided_%": 89.7,
+      "Stand_With_Support_%": 73.8,
+      "Walk_Independently_%": 50.2,
+      "Normal_Swallow_%": 96.2,
+      "Survival_at_24m_%": 98.7
+    },
+    "month_60": {
+      "smn_pct": 76.4,
+      "mn_pct": 55.0,
+      "Spontaneous_Breathing_%": 96.9,
+      "Head_Control_%": 97.8,
+      "Sit_Unaided_%": 89.7,
+      "Stand_With_Support_%": 73.8,
+      "Walk_Independently_%": 50.2,
+      "Normal_Swallow_%": 96.2,
+      "Survival_at_24m_%": 98.7
+    }
+  },
+  "OpenSMA_Combo_Protocol": {
+    "month_12": {
+      "smn_pct": 80.2,
+      "mn_pct": 62.4,
+      "Spontaneous_Breathing_%": 98.1,
+      "Head_Control_%": 98.7,
+      "Sit_Unaided_%": 93.3,
+      "Stand_With_Support_%": 80.9,
+      "Walk_Independently_%": 58.5,
+      "Normal_Swallow_%": 97.7,
+      "Survival_at_24m_%": 99.3
+    },
+    "month_24": {
+      "smn_pct": 80.4,
+      "mn_pct": 61.4,
+      "Spontaneous_Breathing_%": 98.2,
+      "Head_Control_%": 98.7,
+      "Sit_Unaided_%": 93.4,
+      "Stand_With_Support_%": 81.2,
+      "Walk_Independently_%": 58.8,
+      "Normal_Swallow_%": 97.7,
+      "Survival_at_24m_%": 99.3
+    },
+    "month_60": {
+      "smn_pct": 80.4,
+      "mn_pct": 58.7,
+      "Spontaneous_Breathing_%": 98.2,
+      "Head_Control_%": 98.7,
+      "Sit_Unaided_%": 93.4,
+      "Stand_With_Support_%": 81.2,
+      "Walk_Independently_%": 58.8,
+      "Normal_Swallow_%": 97.7,
+      "Survival_at_24m_%": 99.3
+    }
+  }
+}

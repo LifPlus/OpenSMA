@@ -1,0 +1,54 @@
+{
+  "patient": {
+    "ID": "SMA-CASE-001 (Typical)",
+    "Age_months": 6,
+    "SMN2_copies": 2,
+    "Baseline_SMN_percent": 20.0,
+    "Motor_Neurons_Remaining_%": 64.0,
+    "Weight_kg": 7.0
+  },
+  "simulation_summary": {
+    "Nusinersen": {
+      "final_smn_pct": 22.58,
+      "motor_neurons_at_12m_pct": 39.67,
+      "neurons_rescued_vs_no_tx": 4.54,
+      "mean_AE_probability": 6.0,
+      "route": "Intrathecal (invasive)"
+    },
+    "Risdiplam": {
+      "final_smn_pct": 30.72,
+      "motor_neurons_at_12m_pct": 41.9,
+      "neurons_rescued_vs_no_tx": 6.77,
+      "mean_AE_probability": 7.83,
+      "route": "Oral (systemic)"
+    },
+    "Novel_ASO_v1": {
+      "final_smn_pct": 37.27,
+      "motor_neurons_at_12m_pct": 42.53,
+      "neurons_rescued_vs_no_tx": 7.4,
+      "mean_AE_probability": 5.58,
+      "route": "Intrathecal (invasive)"
+    },
+    "Fluoro_Risdiplam_Analog": {
+      "final_smn_pct": 32.29,
+      "motor_neurons_at_12m_pct": 42.28,
+      "neurons_rescued_vs_no_tx": 7.15,
+      "mean_AE_probability": 6.47,
+      "route": "Oral (systemic)"
+    },
+    "Repurposed_Orals": {
+      "final_smn_pct": 26.79,
+      "motor_neurons_at_12m_pct": 40.96,
+      "neurons_rescued_vs_no_tx": 5.83,
+      "mean_AE_probability": 7.75,
+      "route": "Oral (systemic)"
+    },
+    "OpenSMA_LNP_ASO": {
+      "final_smn_pct": 37.87,
+      "motor_neurons_at_12m_pct": 42.65,
+      "neurons_rescued_vs_no_tx": 7.53,
+      "mean_AE_probability": 2.42,
+      "route": "Intrathecal (LNP)"
+    }
+  }
+}

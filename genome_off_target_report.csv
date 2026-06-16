@@ -1,0 +1,9 @@
+Sequence_Name,Query,Max_Off_Target_%,SMN1_Homology_%,Most_Similar_Gene,Risk
+ASO_Candidate_1,GATTCACTTTCATAATGCTGGCAG...,45.8,37.5,CDKN1A_p21_promo (tumor suppressor),🟢 LOW — Safe to Progress
+ASO_Candidate_2,TTCACTTTCATAATGCTGGCAG...,50.0,40.9,CDKN1A_p21_promo (tumor suppressor),🟢 LOW — Safe to Progress
+ASO_Candidate_3,TCACTTTCATAATGCTGGCAG...,52.4,42.9,CDKN1A_p21_promo (tumor suppressor),🟢 LOW — Safe to Progress
+ASO_Candidate_4,GATTCACTTTCATAATGCTGGC...,43.2,40.9,SNCA_alpha_synuclein (neural off-target),🟢 LOW — Safe to Progress
+ASO_Candidate_5,CACTTTCATAATGCTGGCAG...,55.0,40.0,CDKN1A_p21_promo (tumor suppressor),🟢 LOW — Safe to Progress
+gRNA_Candidate_1,TTGTGATCTTAATTTCGATT...,40.0,37.5,CDKN1A_p21_promo (tumor suppressor),🟢 LOW — Safe to Progress
+gRNA_Candidate_2,TTTAGACAAAATCAAAAAGA...,95.0,95.0,SMN1_exon7 (avoid editing),🔴 HIGH — Do Not Progress
+gRNA_Candidate_3,GACAAAATCAAAAAGAAGGA...,100.0,100.0,SMN1_exon7 (avoid editing),🔴 HIGH — Do Not Progress

@@ -1,0 +1,39 @@
+======================================================================
+  OpenSMA — Unified Discovery Pipeline Final Report
+======================================================================
+
+Pipeline Status: PASS
+
+PATIENT PROFILE
+  patient_id: SMA-CASE-001 (Typical)
+  age_months: 6
+  weight_kg: 7.0
+  smn2_copies: 2
+  sma_type: 1
+  baseline_motor_function_chop_intend: 8
+  previous_treatments: []
+
+PHASE RESULTS
+  ✓ phase_01: De Novo Small Molecule Generation (Genetic Algorithm) [PASS]
+  ✓ phase_02: Smart ASO Design (Generative + Splicing Estimator) [PASS]
+  ✓ phase_03: CRISPR/Base Editing gRNA Design [PASS]
+  ✓ phase_04: ADMET Pharmacokinetic Screening [PASS]
+  ✓ phase_05: ASO Toxicity Pre-Screen [PASS]
+  ✓ phase_06: AutoDock Vina 3D Molecular Docking [PASS]
+  ✓ phase_07: Tox21 ML Toxicity Prediction (GBM / 1999 molecules) [PASS]
+  ✓ phase_08: ODE Calibration (Finkel 2017, Baranello 2021) + Genome Off-Target [PASS]
+  ✓ phase_09: Composite Final Scoring & Ranking [PASS]
+  ✓ phase_10: Personalized Patient Clinical Simulation [PASS]
+  ✓ phase_11: Full Cure Protocol Simulation (5-Year ODE) [PASS]
+  ✓ phase_12: Metropolis Monte Carlo 3D Binding Stability Simulator [PASS]
+
+KEY SCIENTIFIC OUTPUTS
+  best_docking_affinity_kcal: -7.7
+  best_aso_score: 292.6
+  best_exon7_inclusion: 88.4
+  safe_sequences: 6
+  flagged_sequences: 2
+  full_cure_walk_pct_5yr: 50.2
+  full_cure_survival_5yr: 98.7
+  best_mmc_stability_rmsd: 4.66
+  best_mmc_stability_class: UNSTABLE (Pocket escape)
