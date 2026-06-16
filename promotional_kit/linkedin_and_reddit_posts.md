@@ -1,39 +1,39 @@
-# OpenSMA LinkedIn ve Reddit Gönderi Şablonları
+# OpenSMA LinkedIn and Reddit Posting Templates
 
-Bu dosya, projenizi profesyonel ağlarda ve akademik Reddit topluluklarında paylaşarak ilgi çekmek için özelleştirilmiş uzun format gönderi şablonlarını içerir.
-
----
-
-## 1. LinkedIn Gönderi Şablonu (Profesyonel & DeSci Odaklı)
-
-**Başlık:** SMA Hastalığına Karşı Açık Kaynaklı İlaç Keşfi ve Klinik Simülasyon: OpenSMA Platformu Yayında!
-
-**Metin:**
-> Spinal Müsküler Atrofi (SMA) gibi nadir ve tedavisi milyonlarca doları bulan hastalıklar için pre-klinik ilaç keşif süreçlerini nasıl hızlandırabilir ve demokratikleştirebiliriz?
-> 
-> Bu soruya yanıt olarak geliştirdiğimiz tamamen açık kaynaklı **OpenSMA** platformunu duyurmaktan mutluluk duyuyorum. Platform, de novo küçük molekül tasarımından başlayıp 5 yıllık klinik prognozu saniyeler içinde simüle eden 12 aşamalı hesaplamalı bir keşif motorudur.
-> 
-> **OpenSMA Neleri Bir Araya Getiriyor?**
-> 🧬 **Smart ASO Tasarımı:** pre-mRNA hibridizasyon kararlılığını Freier 1986 Nearest-Neighbor termodinamik parametreleriyle tahmin eden gelişmiş RNA bağlama analitiği.
-> 🧪 **3D Moleküler Yerleşim ve Dinamik:** U1 snRNP-RNA cebine (PDB 8R62) karşı AutoDock Vina yerleşimi ve vücut sıcaklığında ($310\text{ K}$) çalışan 1000 adımlık Metropolis Monte Carlo dinamik stabilitesi.
-> 📊 **Kişiselleştirilmiş PBPK Simülasyonu:** 5-bölmeli (Gut, Plasma, Tissue, CSF, Brain) kütle transfer ODE sistemi. Modellerimiz Nusinersen ve Risdiplam Faz 3 klinik verileriyle kalibre edilmiştir (Uyum RMSE: $0.33$ ve $0.28$).
-> 📈 **Full Cure Protokolü:** Kalıcı CRISPR Base Editing öncesinde motor nöron dejenerasyonunu durduracak "Bridging ASO" ve oral modülatör içeren kombinasyon terapisinin 10.000 sanal hasta üzerindeki uzun vadeli Monte Carlo klinik sonuçları.
-> 
-> **Neden Açık Kaynak ve DeSci (Merkeziyetsiz Bilim)?**
-> İlaç keşif süreçlerinin kapalı kapılar ardında yapılması ve yüksek maliyetler, nadir hastalık araştırma hızını yavaşlatıyor. OpenSMA ile kodlarımızı, veri setlerimizi ve fibroblast hücre hatlarında denenebilecek detaylı **Wet-Lab Islak Laboratuvar Protokolünü** MIT lisansı ile paylaşıyoruz. Amacımız, deneysel biyologlar ve hesaplamalı bilimciler arasında köprü kurmaktır.
-> 
-> Bizi GitHub üzerinden takip edebilir, projeye katkı sunabilir veya laboratuvarınızda test edebilirsiniz:
-> 🔗 [GITHUB REPO LINKINIZ]
-> 
-> #DeSci #OpenScience #ComputationalBiology #Bioinformatics #SMATreatment #Biotech
+This file contains optimized copy for sharing the project on professional networks and scientific subreddits.
 
 ---
 
-## 2. Reddit r/bioinformatics Gönderi Şablonu (Teknik & Algoritmik)
+## 1. LinkedIn Post Template (Professional & DeSci Focused)
 
-**Başlık:** [Showcase] OpenSMA: An open-source 12-phase pipeline for SMA drug discovery - Generative GA, RNA Nearest-Neighbor Thermodynamics, Metropolis Monte Carlo, and 5-Compartment PBPK ODEs.
+**Title:** Open-Source Splicing Modulation & Clinical Simulation: OpenSMA Platform is Live!
 
-**Metin:**
+**Body:**
+> How can we accelerate and democratize pre-clinical drug discovery for rare neuromuscular diseases like Spinal Muscular Atrophy (SMA), where commercial therapies cost millions of dollars?
+> 
+> I am thrilled to share that we have open-sourced **OpenSMA**, an end-to-end computational drug discovery pipeline and systems biology simulator for SMA.
+> 
+> **What is OpenSMA?**
+> 🧬 **Smart ASO Design:** A sliding window scanner that computes hybridization free energy ($\Delta G^\circ_{37}$) of ASOs targeting the pre-mRNA ISS-N1 intron 7 region using Freier 1986 Nearest-Neighbor doublets.
+> 🧪 **3D Molecular Docking & Pocket Dynamics:** AutoDock Vina molecular docking against the experimental PDB 8R62 structure, coupled with 1000-step Metropolis Monte Carlo dynamics simulating thermal stability at body temperature ($310\text{ K}$).
+> 📊 **Physiologically-Based Pharmacokinetics (PBPK):** A 5-compartment continuous mass-transfer ODE system. PK parameters are fitted and calibrated against Phase 3 clinical trials (Finkel 2017 & Baranello 2021) with high correlation (RMSE of $0.33$ and $0.28$).
+> 📈 **Full Cure Splicing PD & Monte Carlo Cohorts:** Long-term virtual trial projection (10,000 patients) for a multi-modal combination therapy combining transient ASO induction, oral modulators, and CRISPR Base Editing.
+> 
+> **Why Open Science and DeSci?**
+> Proprietary drug discovery models and high pricing structures slow down rare disease research. OpenSMA releases all pipeline code, trained machine learning classifiers (Tox21 mitochondrial safety models), and most importantly, a detailed **Wet-Lab Experimental Validation Protocol** under the MIT license. Our goal is to bridge dry-lab predictions with direct, reproducible laboratory testing.
+> 
+> Check out the repository, run the simulations, and contribute:
+> 🔗 [INSERT YOUR GITHUB REPO LINK HERE]
+> 
+> #DeSci #OpenScience #ComputationalBiology #Bioinformatics #SMATreatment #Biotech #RareDisease
+
+---
+
+## 2. Reddit r/bioinformatics & r/desci Post Template (Technical & Algoritmik)
+
+**Title:** [Showcase] OpenSMA: An open-source 12-phase pipeline for SMA drug discovery - Generative GA, RNA Nearest-Neighbor Thermodynamics, Metropolis Monte Carlo, and 5-Compartment PBPK ODEs.
+
+**Body:**
 > Hi everyone,
 > 
 > I wanted to share **OpenSMA**, an end-to-end computational drug discovery and systems biology platform we built for Spinal Muscular Atrophy (SMA), now fully open-sourced under the MIT license.
@@ -56,6 +56,6 @@ Bu dosya, projenizi profesyonel ağlarda ve akademik Reddit topluluklarında pay
 > -   **Bioinformaticians** to review our MMC energy functions and expand the pipeline to other splicing-defective diseases like Duchenne Muscular Dystrophy (DMD).
 > 
 > Check out the repository and the full documentation here:
-> 🔗 [LINK TO GITHUB REPO]
+> 🔗 [INSERT GITHUB LINK HERE]
 > 
 > Feedback and PRs are highly welcome!

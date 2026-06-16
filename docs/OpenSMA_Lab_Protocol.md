@@ -1,131 +1,131 @@
-# OpenSMA: Açık Kaynaklı (DeSci) Islak Laboratuvar Validasyon Protokolü
+# OpenSMA: Open-Source (DeSci) Wet-Lab Validation Protocol
 
-Bu doküman, OpenSMA platformu tarafından tasarlanan küçük molekül ve ASO (Antisens Oligonükleotid) adaylarının laboratuvar ortamında (in vitro ve in vivo) nasıl test edileceğini, formüle edileceğini ve doğrulanacağını açıklayan adım adım deneysel validasyon protokolüdür.
-
----
-
-## 1. Deneysel Tasarım ve Başlangıç Materyalleri
-
-### 1.1. Hücre Hatları (Cell Lines)
-*   **SMA Hasta Fibroblast Hücre Hattı:** GM03813 (Coriell Institute). Genotip: *SMN1* homozigot delesyon, *SMN2* 2 kopya (Tip 1 SMA klinik fenotipi).
-*   **Kontrol Hücre Hattı:** GM03815 (Sağlıklı taşıyıcı anne/baba fibroblastları).
-*   **Genel Ekspresyon Kontrolü:** HEK293T (ATCC CRL-11268).
-
-### 1.2. Reaktifler ve Kimyasallar
-*   **Kültür Medyumu:** DMEM (Dulbecco's Modified Eagle Medium - Gibco, Cat #11965092), %10 Fetal Bovine Serum (FBS - Gibco), %1 Penicillin-Streptomycin.
-*   **Transfeksiyon Reaktifi:** Lipofectamine 3000 (Invitrogen) veya MC3 bazlı Lipit Nanopartiküller (LNP).
-*   **ASO Kimyası:** 2'-O-metoksietil (2'-MOE) modifiyeli fosforotiyoat (PS) omurgalı oligonükleotidler (özel sentez firmalarından PAGE veya HPLC saflığında temin edilir).
-*   **Birincil Antikorlar:** Mouse anti-SMN (Clone 2B1, Sigma-Aldrich, Cat #S2944), Rabbit anti-Beta-Actin (Cell Signaling Technology, Cat #4970).
-*   **SMI-32 Antikoru:** Mouse anti-Neurofilament H Non-Phosphorylated (SMI-32, BioLegend, Cat #801701 - Motor nöron spesifik işaretleyici).
+This document serves as the step-by-step experimental validation protocol describing how to test, formulate, and validate the small molecule and ASO (Antisense Oligonucleotide) candidates designed by the OpenSMA platform in-vitro and in-vivo.
 
 ---
 
-## 2. Protokol A: ASO ve LNP Transfeksiyonu (In Vitro Splicing Modülasyonu)
+## 1. Experimental Design and Starting Materials
 
-### 2.1. LNP Formulasyonu (Mikroakışkan Çip Yöntemi)
-1.  **Lipit Hazırlığı:** İyonize edilebilir lipit DLin-MC3-DMA, DSPC, Kolesterol ve DMG-PEG2000 sırasıyla 50:10:38.5:1.5 molar oranında tartılır. Susuz %100 Etanol içinde çözülerek toplam lipit konsantrasyonu 10 mM yapılır.
-2.  **ASO Hazırlığı:** Sentezlenen ASO adayı, 50 mM Sodyum Sitrat tamponunda (pH 4.0) çözülerek 0.2 mg/mL nükleik asit çözeltisi elde edilir.
-3.  **Karıştırma (Formülasyon):** Mikroakışkan karıştırıcıda sulu faz ile organik etanol fazı 3:1 akış hızı oranında (Total akış hızı = 12 mL/dk) hızla çarpıştırılır.
-4.  **Diyaliz:** Karışım, PBS (pH 7.4) tamponuna karşı Slide-A-Lyzer diyaliz kaseti (10k MWCO) kullanılarak 4°C'de 16 saat boyunca diyaliz edilir (etanolün uzaklaştırılması için).
-5.  **Boyut Analizi:** DLS (Dinamik Işık Saçılımı) cihazında LNP boyutu (hedef: 70-90 nm) ve polidispersite indeksi (PDI < 0.15) doğrulanır.
+### 1.1. Cell Lines
+*   **SMA Patient Fibroblast Cell Line:** GM03813 (Coriell Institute). Genotype: *SMN1* homozygous deletion, *SMN2* 2 copies (Type 1 SMA clinical phenotype).
+*   **Control Cell Line:** GM03815 (Healthy carrier parent fibroblasts).
+*   **General Expression Control:** HEK293T (ATCC CRL-11268).
 
-### 2.2. Fibroblast Hücrelerine Transfeksiyon
-1.  GM03813 hasta fibroblastları, 6 kuyucuklu plakalara kuyucuk başına $2 \times 10^5$ hücre olacak şekilde ekilir ve %5 $CO_2$, 37°C ortamında 24 saat inkübe edilir.
-2.  Hücreler %70-80 yoğunluğa ulaştığında, besi ortamı serumsuz Opti-MEM (Gibco) ile değiştirilir.
-3.  ASO-LNP formülasyonu (veya Lipofectamine 3000 ile komplekslenmiş çıplak ASO) kuyucuklara farklı konsantrasyonlarda (10 nM, 50 nM, 100 nM, 200 nM) eklenir. Kontrol kuyucuklarına sadece boş LNP (Scrambled ASO) verilir.
-4.  4-6 saat sonra besi ortamı standart %10 FBS'li DMEM ile değiştirilir. Hücreler analiz için 48 saat boyunca inkübe edilir.
+### 1.2. Reagents and Chemicals
+*   **Culture Medium:** DMEM (Dulbecco's Modified Eagle Medium - Gibco, Cat #11965092), 10% Fetal Bovine Serum (FBS - Gibco), 1% Penicillin-Streptomycin.
+*   **Transfection Reagent:** Lipofectamine 3000 (Invitrogen) or MC3-based Lipid Nanoparticles (LNPs).
+*   **ASO Chemistry:** 2'-O-methoxyethyl (2'-MOE) modified phosphorothioate (PS) backbone oligonucleotides (obtained from custom synthesis suppliers at PAGE or HPLC purity).
+*   **Primary Antibodies:** Mouse anti-SMN (Clone 2B1, Sigma-Aldrich, Cat #S2944), Rabbit anti-Beta-Actin (Cell Signaling Technology, Cat #4970).
+*   **SMI-32 Antibody:** Mouse anti-Neurofilament H Non-Phosphorylated (SMI-32, BioLegend, Cat #801701 - Motor neuron-specific marker).
 
 ---
 
-## 3. Protokol B: RT-qPCR ile Ekzon 7 Dahil Etme Oranının Analizi
+## 2. Protocol A: ASO and LNP Transfection (In Vitro Splicing Modulation)
 
-### 3.1. Toplam RNA İzolasyonu ve cDNA Sentezi
-1.  Transfekte edilen hücrelerden TRIzol (Invitrogen) reaktifi kullanılarak standart kloroform faz ayrımı yöntemiyle toplam RNA izole edilir.
-2.  RNA konsantrasyonu ve saflığı Nanodrop spektrofotometresinde ($A_{260}/A_{280} \ge 1.8$) doğrulanır.
-3.  1 µg toplam RNA, High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems) kullanılarak rastgele hekzametrik primerlerle cDNA'ya dönüştürülür.
+### 2.1. LNP Formulation (Microfluidic Chip Method)
+1.  **Lipid Preparation:** Weigh the ionizable lipid DLin-MC3-DMA, DSPC, Cholesterol, and DMG-PEG2000 at a molar ratio of 50:10:38.5:1.5, respectively. Dissolve in anhydrous 100% Ethanol to obtain a total lipid concentration of 10 mM.
+2.  **ASO Preparation:** Dissolve the synthesized ASO candidate in 50 mM Sodium Citrate buffer (pH 4.0) to achieve a 0.2 mg/mL nucleic acid solution.
+3.  **Mixing (Formulation):** Impinge the aqueous phase and the organic ethanol phase in a microfluidic mixer at a flow rate ratio of 3:1 (Total flow rate = 12 mL/min).
+4.  **Dialysis:** Dialyze the mixture against PBS (pH 7.4) buffer using a Slide-A-Lyzer dialysis cassette (10k MWCO) at 4°C for 16 hours to completely remove the ethanol.
+5.  **Size Analysis:** Verify LNP size (target: 70-90 nm) and polydispersity index (PDI < 0.15) using a Dynamic Light Scattering (DLS) instrument.
 
-### 3.2. Yarı Kantitatif PCR ve qPCR Koşulları
-*   **Ekzon 7 Dahil Edilme Durumunu Belirleyen RT-PCR Primerleri (Human SMN2 spesifik):**
+### 2.2. Transfection of Fibroblast Cells
+1.  Seed GM03813 patient fibroblasts in 6-well plates at $2 \times 10^5$ cells per well and incubate for 24 hours at 37°C in a 5% $CO_2$ incubator.
+2.  Once cells reach 70-80% confluence, replace the growth medium with serum-free Opti-MEM (Gibco).
+3.  Add ASO-LNP formulations (or naked ASOs complexed with Lipofectamine 3000) to wells at various concentrations (10 n M, 50 nM, 100 nM, 200 nM). Add empty LNPs (with Scrambled ASO) to control wells.
+4.  After 4-6 hours, replace the transfection medium with standard DMEM containing 10% FBS. Incubate cells for 48 hours before analysis.
+
+---
+
+## 3. Protocol B: Analysis of Exon 7 Inclusion Rate via RT-qPCR
+
+### 3.1. Total RNA Isolation and cDNA Synthesis
+1.  Isolate total RNA from transfected cells using TRIzol (Invitrogen) reagent via standard chloroform phase separation.
+2.  Verify RNA concentration and purity on a Nanodrop spectrophotometer ($A_{260}/A_{280} \ge 1.8$).
+3.  Convert 1 µg of total RNA into cDNA using the High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems) with random hexamer primers.
+
+### 3.2. Semi-Quantitative PCR and qPCR Conditions
+*   **RT-PCR Primers Determining Exon 7 Inclusion (Human SMN2 specific):**
     *   **Forward (Exon 6):** 5'-GCTATCATAATTTTGTTCATTTT-3'
     *   **Reverse (Exon 8):** 5'-CCAGATTCTCTTGATGATGC-3'
-*   **PCR Reaksiyon Karışımı:** 2 µL cDNA, 1.25 U Taq DNA Polimeraz, 0.4 µM her bir primer, 0.2 mM dNTP, PCR Tamponu (Toplam hacim: 25 µL).
-*   **PCR Termal Döngü Protokolü:**
-    1.  Başlangıç Denatürasyonu: 95°C, 3 dk
-    2.  Döngü (30 tekrar):
-        *   Denatürasyon: 95°C, 30 sn
-        *   Bağlanma (Annealing): 55°C, 30 sn
-        *   Uzama (Extension): 72°C, 45 sn
-    3.  Nihai Uzama: 72°C, 5 dk
-4.  **Jel Elektroforezi:** PCR ürünleri %2'lik agaroz jelde ethidium bromide eşliğinde yürütülür.
-    *   **Beklenen Bant Boyutları:** Ekzon 7 içeren tam boy transcript (Full-length SMN2) = **263 bp**, Ekzon 7 içermeyen transcript (Delta7-SMN2) = **209 bp**.
-5.  Bant yoğunlukları ImageJ programı ile analiz edilir. Ekzon 7 dahil edilme yüzdesi aşağıdaki formülle hesaplanır:
-    $$\text{Ekzon 7 Inclusion \%} = \frac{\text{Yoğunluk (263 bp Bandı)}}{\text{Yoğunluk (263 bp Bandı)} + \text{Yoğunluk (209 bp Bandı)}} \times 100$$
+*   **PCR Reaction Mix:** 2 µL cDNA, 1.25 U Taq DNA Polymerase, 0.4 µM of each primer, 0.2 mM dNTPs, PCR Buffer (Total volume: 25 µL).
+*   **PCR Thermal Cycler Protocol:**
+    1.  Initial Denaturation: 95°C for 3 min
+    2.  Cycling (30 repeats):
+        *   Denaturation: 95°C for 30 sec
+        *   Annealing: 55°C for 30 sec
+        *   Extension: 72°C for 45 sec
+    3.  Final Extension: 72°C for 5 min
+4.  **Gel Electrophoresis:** Run PCR products on a 2% agarose gel in the presence of ethidium bromide.
+    *   **Expected Band Sizes:** Full-length SMN2 transcript (incorporating Exon 7) = **263 bp**, skipped transcript ($\Delta7$-SMN2) = **209 bp**.
+5.  Analyze band intensities using ImageJ software. Calculate the Exon 7 inclusion percentage using the following equation:
+    $$\text{Exon 7 Inclusion \%} = \frac{\text{Intensity (263 bp Band)}}{\text{Intensity (263 bp Band)} + \text{Intensity (209 bp Band)}} \times 100$$
 
 ---
 
-## 4. Protokol C: Western Blot ile SMN Protein Seviyesinin Ölçümü
+## 4. Protocol C: Quantification of SMN Protein Levels via Western Blot
 
-### 4.1. Protein İzolasyonu
-1.  Hücreler buz üzerinde RIPA Lysis Buffer (proteaz ve fosfataz inhibitör kokteyli içeren) ile lize edilir.
-2.  Lizatlar 4°C'de 14.000 rpm'de 15 dk santrifüj edilerek süpernatant alınır.
-3.  Protein konsantrasyonu BCA Protein Assay Kit (Thermo Fisher) ile tayin edilir.
+### 4.1. Protein Isolation
+1.  Lyse cells on ice using RIPA Lysis Buffer containing protease and phosphatase inhibitor cocktails.
+2.  Centrifuge lysates at 14,000 rpm for 15 min at 4°C and collect the supernatant.
+3.  Determine protein concentration using the BCA Protein Assay Kit (Thermo Fisher).
 
-### 4.2. SDS-PAGE ve Membrana Aktarım
-1.  30 µg protein örneği Laemmli yükleme tamponu ile 95°C'de 5 dk denatüre edilir.
-2.  Örnekler %10'luk SDS-PAGE jeline yüklenir ve 100V'ta yürütülür.
-3.  Jeldeki proteinler PVDF membrana (Bio-Rad) ıslak aktarım (Wet Transfer) yöntemiyle 300 mA'de 1.5 saat boyunca transfer edilir.
+### 4.2. SDS-PAGE and Membrane Transfer
+1.  Denature 30 µg of protein samples with Laemmli loading buffer at 95°C for 5 min.
+2.  Load samples onto a 10% SDS-PAGE gel and run at 100V.
+3.  Transfer proteins from the gel to a PVDF membrane (Bio-Rad) using the Wet Transfer method at 300 mA for 1.5 hours.
 
-### 4.3. Antikor İnkübasyonu ve Görüntüleme
-1.  Membran, %5 yağsız süt tozu içeren TBST (Tris-buffered saline, %0.1 Tween-20) içinde oda sıcaklığında 1 saat bloke edilir.
-2.  Birincil antikorlar (Mouse anti-SMN, 1:1000 ve Rabbit anti-Beta-Actin, 1:5000) ile 4°C'de 16 saat inkübe edilir.
-3.  TBST ile 3 kez 10 dk yıkama yapılır.
-4.  HRP-konjuge ikincil antikorlar (Anti-mouse IgG-HRP ve Anti-rabbit IgG-HRP, 1:10.000) ile oda sıcaklığında 1 saat inkübe edilir.
-5.  ECL Western Blotting Substrate (Pierce) kullanılarak kemilüminesans görüntüleme cihazında (ChemiDoc) bantlar görüntülenir. Beta-Aktin referansına göre SMN protein artış katı hesaplanır.
-
----
-
-## 5. Protokol D: Motor Nöron Hayatta Kalma ve SMI-32 Staining Analizi
-
-Küçük moleküllerin veya ASO'ların dejenerasyonu durdurma yetisi ko-kültür modellerinde test edilir:
-1.  **Hücre İzolasyonu:** Gebeliğin 14. günündeki (E14) fare embriyolarından spinal kord motor nöronları izole edilerek Neurobasal Medium (%2 B-27, 0.5 mM L-Glutamine, 10 ng/mL BDNF, GDNF ve CNTF içeren) ortamında kültürlenir.
-2.  **SMA Koşullarının Taklidi:** Motor nöronlara siRNA veya düşük doz toksin verilerek dejenerasyon tetiklenir veya hasta fibroblastlarından elde edilen şartlandırılmış medyum (conditioned medium) eklenir.
-3.  **İlaç Uygulaması:** Aday küçük moleküller (optimum doz: 10 nM - 10 µM) veya ASO'lar hücrelere eklenir.
-4.  **İmmünofloresan Boyama (SMI-32):**
-    *   Hücreler 48 saat sonra %4 Paraformaldehit (PFA) ile fikse edilir.
-    *   Triton X-100 (%0.1) ile geçirgenleştirme yapılır.
-    *   **SMI-32 Birincil Antikoru** (1:1000) ile 4°C'de gece boyu inkübe edilir.
-    *   Alexa Fluor 488 konjuge ikincil antikor (1:500) ile oda sıcaklığında 1 saat inkübe edilir.
-    *   DAPI ile çekirdek boyaması yapılır.
-5.  **Hayatta Kalma Sayımı:** SMI-32 pozitif olan, uzun aksonlara sahip sağlıklı motor nöron sayıları floresan mikroskobu altında sayılır. Tedavi edilmeyen dejeneratif kontrol grubu ile kurtarılan grup karşılaştırılır.
+### 4.3. Antibody Incubation and Imaging
+1.  Block the membrane in TBST (Tris-buffered saline, 0.1% Tween-20) containing 5% non-fat dry milk powder for 1 hour at room temperature.
+2.  Incubate with primary antibodies (Mouse anti-SMN, 1:1000 and Rabbit anti-Beta-Actin, 1:5000) for 16 hours at 4°C.
+3.  Wash the membrane 3 times for 10 min each with TBST.
+4.  Incubate with HRP-conjugated secondary antibodies (Anti-mouse IgG-HRP and Anti-rabbit IgG-HRP, 1:10,000) for 1 hour at room temperature.
+5.  Visualize bands using ECL Western Blotting Substrate (Pierce) on a chemiluminescence imaging system (ChemiDoc). Calculate the fold increase of SMN protein normalized against the Beta-Actin reference.
 
 ---
 
-## 6. Protokol E: In Vivo Validasyon (SMA Delta7 Fare Modeli)
+## 5. Protocol D: Motor Neuron Survival and SMI-32 Staining Analysis
 
-### 6.1. Hayvan Modeli
-*   **Model:** $Smn^{-/-}; SMN2^{+/+}; SMN\Delta7^{+/+}$ (Jackson Laboratory, Strain #005025). Bu fareler insan Tip 1 SMA kliniğini taklit eder ve tedavi edilmezlerse ortalama 13-15 gün yaşarlar.
-
-### 6.2. Dosing ve Uygulama Yolları
-*   **Küçük Moleküller (Oral):** Doğumdan sonraki 1. günden (P1) itibaren farelere günlük oral gavage yoluyla 1-10 mg/kg dozunda ilaç çözeltisi (mikro-şırınga ile ağızdan) verilir.
-*   **ASO Tedavisi (İntratekal Enjeksiyon):** 
-    *   Doğumdan sonraki 2. günde (P2) farelere kriyojenik anestezi (buz üzerinde hafif dondurma) altında intratekal (spinal kanala doğrudan) enjeksiyon yapılır.
-    *   33G Hamilton mikro-şırıngası ile L3-L4 seviyesinden 2 µL hacimde LNP-ASO formülasyonu (doz: 10-20 µg) enjekte edilir.
-
-### 6.3. Klinik İzlem Parametreleri
-1.  **Sağkalım Analizi (Survival Curve):** Farelerin doğal ölüm günleri kaydedilerek Kaplan-Meier eğrileri oluşturulur.
-2.  **Vücut Ağırlığı Gelişimi:** P1'den itibaren her gün hassas terazi ile tartılarak gelişim grafiği çıkarılır.
-3.  **Motor Fonksiyon Testleri (Righting Reflex):** Fare sırt üstü bırakılır. Tekrar dört ayağı üzerine dönme süresi (Righting time) saniye cinsinden ölçülür. Sağlıklı farelerde bu süre <2 saniyedir. SMA farelerinde ise hastalık ilerledikçe bu süre uzar veya dönme yeteneği kaybolur.
+Test the neuroprotective capability of the small molecules or ASOs in co-culture models:
+1.  **Cell Isolation:** Isolate spinal cord motor neurons from embryonic day 14 (E14) mice and culture in Neurobasal Medium containing 2% B-27, 0.5 mM L-Glutamine, and 10 ng/mL BDNF, GDNF, and CNTF.
+2.  **SMA Phenotype Induction:** Trigger degeneration by transfecting motor neurons with siRNA or exposing them to low-dose toxins, or adding conditioned medium obtained from patient fibroblasts.
+3.  **Drug Treatment:** Add candidate small molecules (optimal dose range: 10 nM - 10 µM) or ASOs to the cells.
+4.  **Immunofluorescence Staining (SMI-32):**
+    *   Fix cells after 48 hours using 4% Paraformaldehyde (PFA).
+    *   Permeabilize using Triton X-100 (0.1%).
+    *   Incubate with **SMI-32 Primary Antibody** (1:1000) overnight at 4°C.
+    *   Incubate with Alexa Fluor 488 conjugated secondary antibody (1:500) for 1 hour at room temperature.
+    *   Stain nuclei using DAPI.
+5.  **Survival Counting:** Count healthy SMI-32 positive motor neurons with long axons under a fluorescence microscope. Compare survival rates between untreated degenerative controls and rescued groups.
 
 ---
 
-## 7. Protokol F: HPLC ve LC-MS ile Kimyasal Saflık Doğrulaması
+## 6. Protocol E: In Vivo Validation (SMA Delta7 Mouse Model)
 
-Sentezlenen veya izole edilen küçük moleküllerin saflığı in vitro testlerden önce kanıtlanmalıdır:
-1.  **HPLC Koşulları:**
-    *   Kolon: C18 Ters Faz (Reverse-Phase) Kolon (4.6 mm x 150 mm, 5 µm).
-    *   Mobil Faz A: %0.1 Trifloroasetik asit (TFA) içeren ultra saf su.
-    *   Mobil Faz B: %0.1 TFA içeren Asetonitril.
-    *   Gradient Akış: %5 B'den %95 B'ye 20 dakikada geçiş, Akış Hızı: 1.0 mL/dk.
-    *   Dedektör: UV (254 nm ve 280 nm).
-    *   **Kabul Kriteri:** Ana pik alanının toplam pik alanına oranı $\ge \%98.5$ olmalıdır (kromatogram saflık doğrulaması).
-2.  **LC-MS Kütle Analizi:** Moleküler iyonizasyon (ESI-MS) ile elde edilen kütle/yük ($m/z$) oranı, tasarlanan formülün teorik kütlesi ile tam uyum göstermelidir.
+### 6.1. Animal Model
+*   **Model:** $Smn^{-/-}; SMN2^{+/+}; SMN\Delta7^{+/+}$ (Jackson Laboratory, Strain #005025). These mice recapitulate human Type 1 SMA, surviving ~13-15 days if untreated.
+
+### 6.2. Dosing and Routes of Administration
+*   **Small Molecules (Oral):** Starting from postnatal day 1 (P1), administer daily oral gavage doses of 1-10 mg/kg using a micro-syringe.
+*   **ASO Treatment (Intrathecal Injection):**
+    *   Perform intrathecal injection on postnatal day 2 (P2) under cryogenic anesthesia (light freezing on ice).
+    *   Inject 2 µL of LNP-ASO formulation (dose: 10-20 µg) at the L3-L4 level using a 33G Hamilton micro-syringe.
+
+### 6.3. Clinical Parameter Monitoring
+1.  **Survival Analysis:** Record natural death days and construct Kaplan-Meier survival curves.
+2.  **Body Weight Monitoring:** Weigh mice daily from P1 onwards to record development curves.
+3.  **Motor Function Tests (Righting Reflex):** Place the mouse on its back. Measure the time in seconds it takes to flip back onto all four paws (Righting time). Healthy mice right themselves in <2 seconds. SMA mice show progressive delay or loss of righting ability.
+
+---
+
+## 7. Protocol F: Chemical Purity Verification via HPLC and LC-MS
+
+Verify the purity of synthesized small molecules before carrying out in-vitro tests:
+1.  **HPLC Conditions:**
+    *   Column: C18 Reverse-Phase Column (4.6 mm x 150 mm, 5 µm).
+    *   Mobile Phase A: Ultrapure water containing 0.1% Trifluoroacetic acid (TFA).
+    *   Mobile Phase B: Acetonitrile containing 0.1% TFA.
+    *   Gradient Run: Transition from 5% B to 95% B over 20 minutes; Flow Rate: 1.0 mL/min.
+    *   Detector: UV (254 nm and 280 nm).
+    *   **Acceptance Criterion:** The ratio of the main peak area to the total peak area must be $\ge 98.5\%$.
+2.  **LC-MS Mass Analysis:** Verify that the mass-to-charge ($m/z$) ratio obtained via electrospray ionization mass spectrometry (ESI-MS) matches the theoretical molecular mass of the designed chemical formula.

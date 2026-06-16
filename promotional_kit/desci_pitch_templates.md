@@ -1,11 +1,11 @@
-# DeSci (Merkeziyetsiz Bilim) Pitch Şablonları
+# OpenSMA: DeSci (Decentralized Science) Pitch Templates
 
-Bu şablonlar, Molecule, LabDAO, VitaDAO gibi DeSci fonlama/araştırma topluluklarına projenizi sunmak ve ResearchHub platformuna raporlarınızı yüklemek için hazırlanmıştır.
+This file contains templates for presenting the project to decentralized science funding, research, and collaboration communities (such as Molecule, LabDAO, VitaDAO) and uploading reports to ResearchHub.
 
 ---
 
-## 1. LabDAO / Molecule Discord Sunucusu Tanıtım Metni
-Bu metni topluluklardaki `#general`, `#project-ideas`, `#proposals` veya `#collaboration` kanallarında paylaşabilirsiniz.
+## 1. LabDAO / Molecule Discord Community Pitch
+For use in `#general`, `#project-ideas`, `#proposals`, or `#collaboration` channels.
 
 > **Hello everyone,**
 > 
@@ -22,19 +22,19 @@ Bu metni topluluklardaki `#general`, `#project-ideas`, `#proposals` veya `#colla
 > 
 > We are actively seeking **experimental biology partners** within the DeSci space to help validate our top-ranked candidates in-vitro. If your lab or DAO is interested in open-source drug discovery for rare diseases, we'd love to chat!
 > 
-> Repo link: 🔗 [GITHUB LINKINIZ]
+> Repo link: 🔗 [INSERT GITHUB LINK HERE]
 > Docs path: `OpenSMA_OpenSource_Release/docs/`
 > 
 > Let's make rare disease drug discovery accessible to everyone. 🧬💻
 
 ---
 
-## 2. ResearchHub Gönderi/Yayın Metni
-ResearchHub platformuna projenin `OpenSMA_Academic_Monograph.md` veya `OpenSMA_Master_Technical_Report.md` dosyasını "Post/Document" olarak yüklerken kullanabileceğiniz özet tanıtım yazısıdır.
+## 2. ResearchHub Publication Introduction
+For use when uploading the monograph or master technical report to ResearchHub.
 
-**Başlık:** OpenSMA: An Open-Source, End-to-End Computational Pipeline and Systems Biology Simulator for SMA Therapeutics
+**Title:** OpenSMA: An Open-Source, End-to-End Computational Pipeline and Systems Biology Simulator for SMA Therapeutics
 
-**Özet / Açıklama:**
+**Abstract / Description:**
 > In this document, we present **OpenSMA**, a fully integrated dry-lab and wet-lab framework designed to accelerate drug discovery for Spinal Muscular Atrophy (SMA). 
 > 
 > By compiling classical biophysics equations (Freier nearest-neighbor doublet thermodynamics, Metropolis-Hastings 3D pocket stability) and clinical pharmacology models (5-compartment PBPK differential equations), the platform screens de novo small molecules, CRISPR base editing guides, and antisense oligonucleotides (ASOs).
@@ -47,4 +47,4 @@ ResearchHub platformuna projenin `OpenSMA_Academic_Monograph.md` veya `OpenSMA_M
 > 
 > We publish this master technical dossier to invite open peer review, academic collaboration, and community-driven verification of our computational predictions.
 > 
-> **Full Repository:** [GITHUB REPO LINKINIZ]
+> **Full Repository:** [INSERT GITHUB LINK HERE]

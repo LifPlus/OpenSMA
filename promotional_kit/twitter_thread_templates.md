@@ -1,50 +1,50 @@
-# OpenSMA Twitter/X Tanıtım Zinciri (Thread) Şablonları
+# OpenSMA Twitter/X Promotion Thread Templates
 
-Bu dosya, projenizi Twitter/X platformunda paylaşarak en yüksek etkileşimi ve bilimsel takibi (özellikle DeSci topluluğundan) elde etmeniz için tasarlanmış tweet zinciri şablonlarını içerir.
+This file contains optimized Twitter/X thread templates designed to announce the project to the global scientific, bioinformatics, and DeSci communities.
 
 ---
 
-## ŞABLON 1: Bilimsel ve DeSci Odaklı Zincir (Önerilen)
+## THREAD 1: Scientific & DeSci Focused Thread (Recommended)
 
-### Tweet 1: Giriş (Hook)
-> 1/ Spinal Müsküler Atrofi (SMA) tedavileri (Zolgensma, Spinraza) dünyanın en pahalı ilaçları arasında. Peki bu süreci demokratikleştirebilir miyiz?
+### Tweet 1: Introduction (Hook)
+> 1/ Spinal Muscular Atrophy (SMA) treatments (Zolgensma, Spinraza) are among the most expensive drugs in the world. Can we democratize this process?
 > 
-> Tamamen açık kaynaklı, 12 aşamalı hesaplamalı ilaç keşfi ve klinik PBPK simülasyon platformu **OpenSMA**'yı yayına aldık! 🧵👇
+> Today we are open-sourcing **OpenSMA**, an end-to-end computational drug discovery pipeline and systems biology simulator for SMA! 🧵👇
 > 
 > #DeSci #OpenScience #Bioinformatics #RareDiseases
 
-### Tweet 2: ASO ve Termodinamik Tasarım
-> 2/ Platform, pre-mRNA ISS-N1 cebini hedefleyen ASO'ları Freier 1986 Nearest-Neighbor modeliyle tarıyor.
+### Tweet 2: ASO and Thermodynamics
+> 2/ The pipeline screens ASOs targeting the pre-mRNA ISS-N1 intron 7 region using the Freier 1986 Nearest-Neighbor model.
 > 
-> FDA onaylı Nusinersen referansı $-24.6\text{ kcal/mol}$ bağlanma enerjisi verirken, de novo tasarladığımız aday **$-36.3\text{ kcal/mol}$** serbest enerji ile kararlılık sınırlarını zorluyor. 🧬
+> While the FDA-approved Nusinersen control scores a $\Delta G^\circ_{37}$ of $-24.6\text{ kcal/mol}$, our top de novo designed ASO candidate exhibits a thermodynamic binding stability of **$-36.3\text{ kcal/mol}$**! 🧬
 
-### Tweet 3: 3D Docking ve Metropolis Monte Carlo Cebin Testi
-> 3/ Tasarlanan küçük molekülleri PDB 8R62 U1-RNA cebinde AutoDock Vina ile dock ettik (Afinite: $-7.7\text{ kcal/mol}$).
+### Tweet 3: 3D Docking & Metropolis Monte Carlo
+> 3/ We docked de novo small molecules into the PDB 8R62 U1-RNA pocket using AutoDock Vina (best binding energy: $-7.7\text{ kcal/mol}$).
 > 
-> Ardından $310\text{ K}$ (vücut sıcaklığı) altında 1000 adımlık **Metropolis Monte Carlo** simülasyonuyla termal cep kararlılığını test ettik. Dinamik kaçış analizi hazır! 💻
+> To test pocket stability under physiological conditions ($310\text{ K}$), we ran 1000-step **Metropolis Monte Carlo** dynamics, tracking RMSD drift. 💻
 
-### Tweet 4: Klinik PBPK Modelleme
-> 4/ Basit PK/PD modellerinin ötesine geçerek; bağırsak, kan plazması, kan-beyin bariyeri (BBB) ve BOS (omurilik sıvısı) geçişlerini içeren **5-bölmeli PBPK ODE** sistemi kurguladık.
+### Tweet 4: Clinical PBPK ODE Engine
+> 4/ Moving beyond basic PK models, we built a **5-compartment PBPK ODE** system simulating drug absorption, blood-brain barrier passage, and accumulation in the CSF and brain parenchyma.
 > 
-> Modeli Finkel 2017 ve Baranello 2021 klinik verileriyle kalibre ettik (Uyum RMSE: $0.33$ ve $0.28$).
+> Calibrated against Phase 3 trial clinical data (Finkel 2017 & Baranello 2021) with RMSE of $0.33$ and $0.28$.
 
-### Tweet 5: 10.000 Sanal Hasta Simülasyonu (Monte Carlo)
-> 5/ Kalıcı Base Editing (CBE) gen tedavisi öncesi motor nöronları koruyacak "ASO Köprüsü" içeren **Full Cure Kombinasyon Protokolünü** test ettik.
+### Tweet 5: 10,000 Patient Virtual Trial
+> 5/ We simulated a multi-modal "Full Cure" protocol: bridging transient ASO dosage with permanent CRISPR Base Editing (CBE) genotoxicity checks.
 > 
-> 5 yıllık Monte Carlo klinik kohort simülasyon sonuçları:
-> 📈 Kalıcı hayatta kalma: `%98.7`
-> 🚶 Bağımsız yürüme olasılığı: `%50.2`
+> 5-year Monte Carlo cohort results (10,000 virtual patients):
+> 📈 Cumulative survival: `%98.7`
+> 🚶 Probability of independent walking: `%50.2`
 
-### Tweet 6: Çağrı ve Kodlar (Call to Action)
-> 6/ Projenin tüm kodları, veri setleri, matematiksel denklemleri ve en önemlisi fibroblast testleri için hazırladığımız **Islak Laboratuvar (Wet-Lab) Protokolü** açık kaynaklıdır!
+### Tweet 6: Call to Action & GitHub Repo
+> 6/ The entire pipeline code, ML models, PBPK solvers, and a detailed **in-vitro wet-lab experimental validation protocol** (fibroblast transfection, Western Blot, qPCR primers) are MIT licensed.
 > 
-> Katkı sunmak, verileri doğrulamak ve laboratuvarda denemek için: 
-> 🔗 [GITHUB LINKINIZI BURAYA EKLEYİN]
+> Review the code, run the pipeline, and collaborate:
+> 🔗 [INSERT YOUR GITHUB REPO LINK HERE]
 > 
 > #OpenSource #RareDisease #Biotech
 
 ---
 
-## Görsel İpuçları (Tweetlere Eklenecek Resimler)
-*   **Tweet 1 veya 5'e:** Platformun ürettiği `full_cure_simulation.png` grafiğini ekleyin.
-*   **Tweet 4'e:** `patient_simulation_plots.png` grafiğini ekleyin.
+## Visual Attachments Guide
+*   **Attach to Tweet 1 or 5:** The generated `full_cure_simulation.png` plot.
+*   **Attach to Tweet 4:** The multi-compartment `patient_simulation_plots.png` plot.
