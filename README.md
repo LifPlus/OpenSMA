@@ -1,77 +1,96 @@
-# OpenSMA: Açık Kaynaklı (DeSci) Spinal Müsküler Atrofi İlaç Keşfi ve Simülasyon Platformu
+# OpenSMA: Open-Source (DeSci) Spinal Muscular Atrophy Drug Discovery and Simulation Platform
 
-OpenSMA, Spinal Müsküler Atrofi (SMA) hastalığı için yeni nesil tedavi alternatifleri (küçük moleküller, ASO ve CRISPR) geliştirmek ve bunların klinik/farmakokinetik süreçlerini simüle etmek amacıyla kurulmuş **Merkeziyetsiz Bilim (DeSci)** odaklı, açık kaynaklı bir hesaplamalı tıp ve biyoloji projesidir.
+OpenSMA is an open-source computational medicine and systems biology project focused on **Decentralized Science (DeSci)**. It is designed to screen and optimize novel therapeutic candidates (small molecules, ASOs, and CRISPR gRNAs) for Spinal Muscular Atrophy (SMA) and simulate their longitudinal pharmacokinetic and clinical response profiles.
 
 ---
 
-## Proje Yapısı
+## Repository Structure
 
-Proje dosyaları aşağıdaki organizasyonla yer almaktadır:
+The files in the repository are organized as follows:
 
 ```text
 OpenSMA_OpenSource_Release/
-├── LICENSE                     # MIT Açık Kaynak Lisansı
-├── requirements.txt            # Python bağımlılık listesi
-├── README.md                   # Bu bilgilendirme dosyası
-├── data/                       # 3D Protein ve genetik girdi verileri
-│   ├── smn2_receptor_real.pdb  # SMN2 splicing kompleksi ham PDB yapısı
-│   ├── receptor_clean.pdb      # MMC ve Docking için temizlenmiş 3D yapı
-│   └── smn2_target_region.fasta # ASO tasarımı için hedef mRNA bölgesi
-├── docs/                       # Bilimsel dokümantasyon ve lab protokolleri
-│   ├── OpenSMA_Lab_Protocol.md # Islak laboratuvar deney validasyon kılavuzu
-│   ├── OpenSMA_Master_Technical_Report.md # Model matematiksel/fiziksel arka plan raporu
-│   └── Production_and_Cost_Analysis.md # Üretim ve maliyet analiz raporu
-├── src/                        # 12 Aşamalı boru hattı python kodları
-│   ├── run_opensma_pipeline.py # Ana yürütücü script (End-to-end executor)
-│   ├── molecule_optimizer.py   # De Novo küçük molekül üretici (Genetik Algoritma)
-│   ├── aso_designer.py         # Termodinamik ASO tasarım modülü
-│   ├── crispr_designer.py      # CRISPR/CBE gRNA tasarım modülü
-│   ├── admet_screener.py       # ADMET filtreleme modülü
-│   ├── aso_toxicity.py         # ASO hedef dışı toksisite tarayıcı
-│   ├── docking_engine.py       # Open3DAlign hiza ve Vina docking motoru
-│   ├── toxicity_model.py       # Tox21 ML toksisite tahmin modeli
-│   ├── ode_calibration_and_screening.py # Literatür kalibrasyonlu ODE motoru
-│   ├── final_scorer.py         # Çok kriterli sıralama ve skorer
-│   ├── patient_sim.py          # Çok bölmeli PBPK hasta simülasyonu
-│   ├── full_cure_sim.py        # 10.000 hasta Monte Carlo klinik simülasyonu
-│   └── pocket_dynamics.py      # Metropolis Monte Carlo 3D bağlanma kararlılığı
-└── results/                    # Simülasyon çıktılarının kaydedileceği klasör
+├── LICENSE                     # MIT Open Source License
+├── requirements.txt            # Python dependencies list
+├── README.md                   # This overview file
+├── data/                       # 3D Protein and genetic inputs
+│   ├── smn2_receptor_real.pdb  # Raw PDB structure of the SMN2 splicing complex
+│   ├── receptor_clean.pdb      # Cleaned 3D structure for docking and MMC
+│   └── smn2_target_region.fasta # Target mRNA sequence for ASO scanning
+├── docs/                       # Scientific monographs and lab protocols
+│   ├── OpenSMA_Lab_Protocol.md # Wet-lab validation protocol
+│   ├── OpenSMA_Master_Technical_Report.md # Full pipeline mathematical/biophysical report
+│   ├── OpenSMA_Academic_Monograph.md # Academic monograph on SMA pathology and physics equations
+│   ├── OpenSMA_Clinical_PBPK_Math.md # PBPK ODE derivation guide
+│   ├── OpenSMA_Validation_Dossier.md # Machine learning toxicity and genomic off-target validation
+│   ├── Production_and_Cost_Analysis.md # Manufacturing cost analysis report
+│   ├── Project_Architecture_and_Logic.md # Pipeline workflow overview
+│   ├── OpenSMA_Manuscript.md # Draft research manuscript
+│   └── White_Paper_OpenSMA.md # OpenSMA executive white paper
+├── src/                        # 12-Phase pipeline source code
+│   ├── run_opensma_pipeline.py # Main end-to-end pipeline executor
+│   ├── molecule_optimizer.py   # De novo small molecule generator (Genetic Algorithm)
+│   ├── aso_designer.py         # Thermodynamic ASO design module
+│   ├── crispr_designer.py      # CRISPR/CBE gRNA design module
+│   ├── admet_screener.py       # ADMET filtration module
+│   ├── aso_toxicity.py         # ASO off-target toxicity scanner
+│   ├── docking_engine.py       # Open3DAlign structure alignment and Vina docking engine
+│   ├── toxicity_model.py       # Tox21 ML mitochondrial toxicity classifier
+│   ├── ode_calibration_and_screening.py # Literature-calibrated PBPK ODE engine
+│   ├── final_scorer.py         # Multi-criteria scoring and candidate ranker
+│   ├── patient_sim.py          # Multi-compartment PBPK patient simulator
+│   ├── full_cure_sim.py        # 10,000 patient Monte Carlo virtual trial simulation
+│   └── pocket_dynamics.py      # Metropolis Monte Carlo 3D pocket stability simulator
+├── promotional_kit/            # Promotion and community sharing kit
+│   ├── community_sharing_guide.md # Roadmap for sharing on DeSci and social networks
+│   ├── desci_pitch_templates.md # Pitch copy for Discord and ResearchHub uploads
+│   ├── linkedin_and_reddit_posts.md # Custom text templates for LinkedIn and Reddit
+│   └── twitter_thread_templates.md # 6-tweet scientific communication thread template
+└── results/                    # Directory where simulation outputs are saved
 ```
 
 ---
 
-## 🛠️ Kurulum ve Çalıştırma
+## 🛠️ Installation and Setup
 
-### 1. Bağımlılıkların Yüklenmesi
-Platform, kimyasal ve biyolojik hesaplamalar için **RDKit** ve veri analizi için **SciPy**, **Scikit-learn**, **Pandas** ve **Matplotlib** kullanmaktadır.
+### 1. Installing Dependencies
+The platform relies on **RDKit** for chemical informatics, **Biopython** for sequence manipulation, and **SciPy**, **Scikit-learn**, **Pandas**, and **Matplotlib** for mathematical modeling, machine learning, and data visualization.
 
-Sanal bir Python ortamı (virtualenv) oluşturup bağımlılıkları yükleyin:
+Create a Python virtual environment (virtualenv) and install the dependencies:
 
 ```bash
-# Sanal ortam oluşturun
+# Create a virtual environment
 python3 -m venv sma_env
 source sma_env/bin/activate
 
-# Bağımlılıkları yükleyin
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 2. Boru Hattını (Pipeline) Çalıştırma
-Tüm 12 aşamalı keşif ve klinik simülasyon döngüsünü başlatmak için:
+### 2. Running the Pipeline
+To execute the complete 12-phase drug discovery and clinical simulation pipeline, run:
 
 ```bash
 python src/run_opensma_pipeline.py
 ```
 
-Boru hattı sırasıyla küçük molekülleri üretecek, ASO'ları termodinamik modellerle filtreleyecek, 3D yerleşimlerini hizalayacak, farmakokinetik ve toksisite filtrelerinden geçirecek ve ardından sanal hastalar üzerinde çok bölmeli PBPK ODE çözümleri ve Monte Carlo kohort analizleri yaparak sonuçları görselleştirecektir.
+The pipeline will:
+1. Generate de novo small molecule candidates using the Genetic Algorithm.
+2. Scan and design ASO sequences using thermodynamic models.
+3. Align 3D conformations and dock compounds into the pre-mRNA pocket.
+4. Filter out candidates failing ADMET, off-target, and machine learning safety thresholds.
+5. Solve multi-compartment PBPK ODE systems for personalized virtual patients.
+6. Run 10,000 patient Monte Carlo cohort simulations and visualize the longitudinal clinical outcomes.
 
 ---
 
-## 🔬 Islak Laboratuvar Validasyonu
+## 🔬 Wet-Lab Experimental Validation
 
-Hesaplamalı modellerle üretilen aday ilaç bileşiklerinin laboratuvarda test edilmesi için geliştirilen **RT-qPCR, Western Blot, SMI-32 Motor Nöron Hücre Canlılığı ve delta7 Fare Modeli** protokollerine [OpenSMA_Lab_Protocol.md](docs/OpenSMA_Lab_Protocol.md) dosyasından ulaşabilirsiniz.
+The repository includes a detailed wet-lab experimental blueprint: **[OpenSMA_Lab_Protocol.md](docs/OpenSMA_Lab_Protocol.md)**.
+This protocol outlines the step-by-step methods (RT-qPCR splicing assays using Exon 6/8 flanking primers, Western Blotting, transfection in GM03813 SMA fibroblasts, and SMI-32 motor neuron survival assays) needed to synthesize and validate the designed candidates in-vitro.
 
 ---
 
-## 📜 Lisans ve Katkı
-Bu proje **MIT Lisansı** ile lisanslanmıştır. Dünyanın her yerindeki bilim insanları, eczacılar ve araştırmacılar bu kod tabanını kendi yerel laboratuvarlarında pre-klinik araştırmalar yapmak amacıyla özgürce indirebilir, modifiye edebilir ve kullanabilirler.
+## 📜 License and Contribution
+
+This project is licensed under the **MIT License**. Scientists, pharmacologists, and researchers worldwide are free to download, modify, and extend this codebase for non-profit and academic drug discovery research.
